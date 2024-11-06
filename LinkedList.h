@@ -197,12 +197,10 @@ public:
 
     //POST: displays linked list
     void print(){
-        int count = 0;
         LNode<T>* tempN = front();
-        cout << "Place\t Data\n";
+        cout << "Data\n";
         while (tempN != nullptr){
-            cout << count << "\t\t\t" << tempN->data << endl;
-            count++;
+            cout << tempN->data << endl;
             tempN = tempN->nextPtr;
         }
     };
